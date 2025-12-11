@@ -119,12 +119,13 @@ Format PDF dibuat otomatis melalui Laravel DomPDF atau Snappy.
 
 ---
 
-## 👥 Team Structure (contoh)
-- **Project Manager**
-- **Backend Developer**
-- **Frontend Developer**
-- **UI/UX Designer** (opsional)
-- **QA Tester** (opsional)
+## 👥 Struktur Tim
+
+| **Posisi** | **Nama** | **NPM** |
+|-----------|----------|---------|
+| Project Manager | M.Farrel Octora R | 233040124 |
+| Backend Developer | - | - |
+| Frontend Developer | - | - |
 
 ---
 
