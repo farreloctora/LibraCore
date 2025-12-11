@@ -1,59 +1,160 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+saya akan membuat
+# 📚 LibraCore  
+**A Modern Digital Library Management System**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+LibraCore adalah aplikasi manajemen perpustakaan digital yang dirancang untuk mempermudah proses pengelolaan buku, kategori, peminjaman, pengguna, serta menyediakan dashboard admin lengkap. Dibangun menggunakan **Laravel 12** dan mengikuti standar modern web development.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### **🔹 Front-End**
+- Halaman landing page (informasi umum, buku terbaru, kategori, dan pencarian)
+- Tampilan detail buku
+- User registration & login
+- Sistem peminjaman buku oleh user
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### **🔹 Admin Dashboard**
+- CRUD Buku  
+- CRUD Kategori  
+- CRUD Penulis  
+- CRUD Data Peminjaman  
+- Manajemen User  
+- Validasi gambar cover (size & extension)  
+- Live Search + Filtering data  
+- PDF Reporting (buku, peminjaman, dan lainnya)
 
-## Learning Laravel
+### **🔹 Backend & System**
+- Laravel 12 + Blade/Livewire (sesuai spesifikasi tugas)
+- Relasi database lebih dari 1 (Books, Authors, Categories, Borrowings, Users)
+- Authentication & Authorization (role: admin & user)
+- Terhubung minimal 1 Public API  
+  - *Contoh:* Google Books API (untuk mengambil metadata buku)
+- Deployment-ready
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🏛️ Core Concept
 
-## Laravel Sponsors
+LibraCore dibuat untuk menjadi **“sistem inti”** dalam pengelolaan perpustakaan digital.  
+Nama *LibraCore* berasal dari:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Libra** → singkatan dari *Library*  
+- **Core** → pusat/inti manajemen  
 
-### Premium Partners
+Artinya, aplikasi ini menjadi pusat pengendali seluruh aktivitas perpustakaan.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🗂️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Layer | Technology |
+|------|------------|
+| Framework | Laravel 12 |
+| Front-End | Blade / Livewire |
+| Database | MySQL / MariaDB |
+| Deployment | Any Shared Hosting / Laravel Forge / etc. |
+| API Integration | Google Books API (optional) |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🏗️ Installation
 
-## Security Vulnerabilities
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-org/LibraCore.git
+cd LibraCore
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 2. Install Dependencies
+```bash
+composer install
+npm install
+npm run build
+```
 
-## License
+### 3. Setup Environment
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Sesuaikan konfigurasi database di file `.env`.
+
+### 4. Migrate & Seed
+```bash
+php artisan migrate --seed
+```
+
+### 5. Run Server
+```bash
+php artisan serve
+```
+
+---
+
+## 🧩 Fitur API Publik (Contoh)
+LibraCore dapat terhubung dengan Google Books API untuk menambahkan buku otomatis dengan ISBN.
+
+```http
+GET https://www.googleapis.com/books/v1/volumes?q=isbn:{ISBN}
+```
+
+Data yang dapat diambil:
+- Judul
+- Penulis
+- Penerbit
+- Tahun terbit
+- Cover book
+- Deskripsi
+
+---
+
+## 📄 PDF Reporting
+Admin dapat mengunduh:
+- Laporan Buku  
+- Laporan Peminjaman  
+- Laporan Pengguna  
+
+Format PDF dibuat otomatis melalui Laravel DomPDF atau Snappy.
+
+---
+
+## 👥 Struktur Tim
+
+| **Posisi** | **Nama** | **NPM** |
+|-----------|----------|---------|
+| Project Manager | M.Farrel Octora R | 233040124 |
+| Backend Developer | - | - |
+| Frontend Developer | - | - |
+
+---
+
+## 📌 Roadmap (Optional)
+- [ ] Dark mode
+- [ ] Import/export data Excel  
+- [ ] Integration dengan QR Code untuk peminjaman  
+- [ ] Payment Gateway untuk denda keterlambatan  
+- [ ] Mobile-friendly redesign  
+
+---
+
+## 📝 License
+Project dibuat untuk keperluan praktikum dan edukasi.
+
+---
+
+## 🤝 Contributors
+Silakan tambahkan username anggota tim pada bagian ini.
+
+---
+
+## ⭐ Acknowledgements
+Thanks to:  
+- Laravel Documentation  
+- OpenAPI Providers  
+- Tim Praktikum Web 2025/2026
+
+---
+
+> **LibraCore — Your Central Hub for Digital Library Management.**
