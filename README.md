@@ -1,4 +1,3 @@
-saya akan membuat
 # 📚 LibraCore  
 **A Modern Digital Library Management System**
 
