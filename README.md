@@ -51,17 +51,13 @@ Aplikasi ini menyediakan fitur pengelolaan buku digital, kategori, pengguna, ser
 
 ## 👥 Tim Pengembang
 Project ini dikembangkan oleh tim yang terdiri dari:
-- Project Manager
-- Backend Developer
-- Frontend Developer
-
-(Setiap anggota melakukan minimal 10 commit sesuai ketentuan)
-
-## 📌 Catatan Tambahan
-Project ini dikembangkan khusus untuk keperluan akademik dan dapat dikembangkan lebih lanjut dengan fitur tambahan seperti:
-- Login OAuth (Google/GitHub)
-- Payment Gateway
-- Deployment API ke Cloud
+| No | Nama Anggota        | NPM        | Role / Jobdesk |
+|----|--------------------|------------|----------------|
+| 1  | M.Farrel Octora R  | 233040124  | Project Manager |
+| 2  | Renu Resdina Putra | 233040117  | Backend Developer |
+| 3  | Azmii Rohmatullah  | 233040121  | Backend Developer |
+| 4  | Muhammad Yoan Pelalana   | 233040137     | Frontend Developer |
+| 5  | Muhammad Jenas Aldera Saepuloh   | 233040141     | Frontend Developer |
 
 ---
 
