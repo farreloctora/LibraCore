@@ -58,6 +58,7 @@ Project ini dikembangkan oleh tim yang terdiri dari:
 | 3  | Azmii Rohmatullah  | 233040121  | Backend Developer |
 | 4  | Muhammad Yoan Pelalana   | 233040137     | Frontend Developer |
 | 5  | Muhammad Jenas Aldera Saepuloh   | 233040141     | Frontend Developer |
+| 6  | Muhammad Dhiaulhaq Triyudhistira Laturua   | 233040171     | Backend Developer |
 
 ---
 
